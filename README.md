@@ -8,6 +8,18 @@ For inquiries, collaborations, or support, feel free to reach out:
 
 [![Telegram Contact](https://img.shields.io/badge/Telegram-Contact%20Me-blue?logo=telegram&style=for-the-badge)](https://t.me/cashblaze127)
 
+## Transaction Flow
+
+```
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   Pump.fun      │    │    Migration     │    │   PumpSwap      │
+│   Final Buy     │───▶│    Trigger       │───▶│   First Buy     │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+         │                       │                       │
+         └───────────────────────┼───────────────────────┘
+                Single Atomic Transaction
+```
+
 ## Related Link & Screenshot
 - https://solscan.io/tx/2JDAAvyPnxVKKrn9HTXH6yJVwANMQivFFFZqsiMkSBYAop7qsUXgg29SFP4NzjmbRBmhzV4hiPGapZuUnmnEFqMa
 ![Screenshot_2](https://github.com/user-attachments/assets/485e67b1-8922-42f3-9135-7c81e9076178)
@@ -103,18 +115,6 @@ npm start
    - Migration trigger instruction  
    - PumpSwap first buy instruction
 5. **Jito Execution**: Submits bundle through Jito for MEV protection
-
-## Transaction Flow
-
-```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Pump.fun      │    │    Migration     │    │   PumpSwap      │
-│   Final Buy     │───▶│    Trigger       │───▶│   First Buy     │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-         │                       │                       │
-         └───────────────────────┼───────────────────────┘
-                Single Atomic Transaction
-```
 
 ## Safety Features
 
